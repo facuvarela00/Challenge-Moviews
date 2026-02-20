@@ -1,13 +1,14 @@
-﻿using MovieApi.Models;
+﻿using Moviews.Models;
 
-namespace MovieApi.Services;
+namespace Moviews.Services;
 
 public interface IMovieService
 {
-    IEnumerable<Movie> GetAll();
-    Movie? GetById(Guid id);
-    Movie Create(Movie movie);
-    Movie Update(Guid id, Movie updatedMovie);
-    Movie Delete(Guid id);
-    Review AddReview(Guid movieId, Review review);
+    Task<IEnumerable<MovieListDTO>> GetAllAsync();
+    Task<MovieDTO> GetByIdAsync(Guid id);
+    Task<MovieDTO> CreateAsync(MovieInputDTO movie);
+    Task<MovieDTO> UpdateAsync(Guid id, MovieInputDTO updatedMovie);
+    Task<MovieDTO> DeleteAsync(Guid id);
+    Task<ReviewDTO> AddReviewAsync(Guid movieId, Guid userId, ReviewInputDTO dto);
+    Task<IEnumerable<ReviewDTO>> GetMovieReviewsAsync(Guid movieId);
 }

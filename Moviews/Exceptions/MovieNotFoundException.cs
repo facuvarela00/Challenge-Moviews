@@ -1,4 +1,4 @@
-﻿namespace MovieApi.Exceptions;
+﻿namespace Moviews.Exceptions;
 
 public class MovieNotFoundException : Exception
 {
@@ -6,7 +6,6 @@ public class MovieNotFoundException : Exception
         : base("Película no encontrada")
     {
     }
-
     public MovieNotFoundException(Guid id)
         : base($"Película con ID {id} no encontrada")
     {

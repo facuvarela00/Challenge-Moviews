@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\",
+  "WorkspaceRootPath": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\exceptions\\invalidreviewexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|solutionrelative:moviews\\exceptions\\invalidreviewexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|solutionrelative:moviews\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\services\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|solutionrelative:moviews\\services\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\exceptions\\movienotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|solutionrelative:moviews\\exceptions\\movienotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\repositories\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1777BE6-7A82-4B3B-815E-158917D653EF}|Moviews\\Moviews.csproj|solutionrelative:moviews\\repositories\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\services\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\services\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\modelos\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\modelos\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InvalidReviewException.cs",
-              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Exceptions\\InvalidReviewException.cs",
-              "RelativeDocumentMoniker": "Moviews\\Exceptions\\InvalidReviewException.cs",
-              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Exceptions\\InvalidReviewException.cs",
-              "RelativeToolTip": "Moviews\\Exceptions\\InvalidReviewException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Moviews\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Moviews\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T01:02:03.165Z",
+              "WhenOpened": "2026-02-20T18:05:21.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MovieService.cs",
-              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Services\\MovieService.cs",
-              "RelativeDocumentMoniker": "Moviews\\Services\\MovieService.cs",
-              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Services\\MovieService.cs",
-              "RelativeToolTip": "Moviews\\Services\\MovieService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAADwv0oAAAAWAAAAAAAAAA==",
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Moviews\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Moviews\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T00:58:39.647Z",
+              "WhenOpened": "2026-02-20T18:02:53.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IMovieService.cs",
-              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Services\\IMovieService.cs",
-              "RelativeDocumentMoniker": "Moviews\\Services\\IMovieService.cs",
-              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Services\\IMovieService.cs",
-              "RelativeToolTip": "Moviews\\Services\\IMovieService.cs",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Moviews\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Moviews\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T00:58:38.757Z",
+              "WhenOpened": "2026-02-20T18:02:40.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MovieRepository.cs",
-              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Repositories\\MovieRepository.cs",
-              "RelativeDocumentMoniker": "Moviews\\Repositories\\MovieRepository.cs",
-              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Repositories\\MovieRepository.cs",
-              "RelativeToolTip": "Moviews\\Repositories\\MovieRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "Moviews\\Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "Moviews\\Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T21:25:51.227Z",
+              "WhenOpened": "2026-02-20T17:56:52.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MovieNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Exceptions\\MovieNotFoundException.cs",
-              "RelativeDocumentMoniker": "Moviews\\Exceptions\\MovieNotFoundException.cs",
-              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Exceptions\\MovieNotFoundException.cs",
-              "RelativeToolTip": "Moviews\\Exceptions\\MovieNotFoundException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Services\\MovieService.cs",
+              "RelativeDocumentMoniker": "Moviews\\Services\\MovieService.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Services\\MovieService.cs",
+              "RelativeToolTip": "Moviews\\Services\\MovieService.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAuwHwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T00:15:46.868Z",
+              "WhenOpened": "2026-02-20T17:47:03.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Modelos\\Review.cs",
+              "RelativeDocumentMoniker": "Moviews\\Modelos\\Review.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Modelos\\Review.cs",
+              "RelativeToolTip": "Moviews\\Modelos\\Review.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:46:23.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMovieService.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Services\\IMovieService.cs",
+              "RelativeDocumentMoniker": "Moviews\\Services\\IMovieService.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Services\\IMovieService.cs",
+              "RelativeToolTip": "Moviews\\Services\\IMovieService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:46:16.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MoviesController.cs",
-              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Controllers\\MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "Moviews\\Controllers\\MoviesController.cs",
-              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\Moviews\\Moviews\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\MoviesController.cs",
               "RelativeToolTip": "Moviews\\Controllers\\MoviesController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADwv1wAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T21:24:54.801Z",
+              "WhenOpened": "2026-02-20T17:43:51.941Z",
               "EditorCaption": ""
             }
           ]

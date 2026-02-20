@@ -1,24 +1,55 @@
 [
   {
-    "ContainingType": "MovieApi.Controllers.MoviesController",
-    "Method": "Create",
-    "RelativePath": "movie/create",
+    "ContainingType": "MoviesController",
+    "Method": "AddReview",
+    "RelativePath": "pelicula/{movieId}/review",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "movie",
-        "Type": "MovieApi.Models.Movie",
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "movieId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "review",
+        "Type": "ReviewInputDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MovieApi.Controllers.MoviesController",
+    "ContainingType": "MoviesController",
+    "Method": "Update",
+    "RelativePath": "pelicula/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "movie",
+        "Type": "Moviews.Models.MovieInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesController",
     "Method": "Delete",
-    "RelativePath": "movie/delete/{id}",
+    "RelativePath": "pelicula/borrar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -32,25 +63,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MovieApi.Controllers.MoviesController",
-    "Method": "GetById",
-    "RelativePath": "movie/get/{id}",
-    "HttpMethod": "GET",
+    "ContainingType": "MoviesController",
+    "Method": "Create",
+    "RelativePath": "pelicula/crear",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "movie",
+        "Type": "Moviews.Models.MovieInputDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MovieApi.Controllers.MoviesController",
+    "ContainingType": "MoviesController",
     "Method": "GetAll",
-    "RelativePath": "movie/getall",
+    "RelativePath": "pelicula/listar",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -58,31 +89,10 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MovieApi.Controllers.MoviesController",
-    "Method": "AddReview",
-    "RelativePath": "movie/review/{movieId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "movieId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "review",
-        "Type": "MovieApi.Models.Review",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MovieApi.Controllers.MoviesController",
-    "Method": "Update",
-    "RelativePath": "movie/update/{id}",
-    "HttpMethod": "PUT",
+    "ContainingType": "MoviesController",
+    "Method": "GetById",
+    "RelativePath": "pelicula/obtener/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -90,10 +100,21 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
-      },
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieApi.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "usuario/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "movie",
-        "Type": "MovieApi.Models.Movie",
+        "Name": "request",
+        "Type": "LoginDTO",
         "IsRequired": true
       }
     ],

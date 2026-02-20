@@ -1,4 +1,4 @@
-﻿namespace MovieApi.Exceptions;
+﻿namespace Moviews.Exceptions;
 
 public class InvalidReviewException : Exception
 {

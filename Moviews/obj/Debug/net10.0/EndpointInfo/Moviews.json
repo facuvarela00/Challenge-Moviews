@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/movie/getall": {
+    "/pelicula/listar": {
       "get": {
         "tags": [
           "Movies"
@@ -17,7 +17,7 @@
         }
       }
     },
-    "/movie/get/{id}": {
+    "/pelicula/obtener/{id}": {
       "get": {
         "tags": [
           "Movies"
@@ -40,7 +40,7 @@
         }
       }
     },
-    "/movie/create": {
+    "/pelicula/crear": {
       "post": {
         "tags": [
           "Movies"
@@ -49,17 +49,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Movie"
+                "$ref": "#/components/schemas/MovieInputDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Movie"
+                "$ref": "#/components/schemas/MovieInputDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Movie"
+                "$ref": "#/components/schemas/MovieInputDTO"
               }
             }
           }
@@ -71,7 +71,7 @@
         }
       }
     },
-    "/movie/update/{id}": {
+    "/pelicula/actualizar/{id}": {
       "put": {
         "tags": [
           "Movies"
@@ -91,17 +91,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Movie"
+                "$ref": "#/components/schemas/MovieInputDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Movie"
+                "$ref": "#/components/schemas/MovieInputDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Movie"
+                "$ref": "#/components/schemas/MovieInputDTO"
               }
             }
           }
@@ -113,7 +113,7 @@
         }
       }
     },
-    "/movie/delete/{id}": {
+    "/pelicula/borrar/{id}": {
       "delete": {
         "tags": [
           "Movies"
@@ -136,12 +136,20 @@
         }
       }
     },
-    "/movie/review/{movieId}": {
+    "/pelicula/{movieId}/review": {
       "post": {
         "tags": [
           "Movies"
         ],
         "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
           {
             "name": "movieId",
             "in": "path",
@@ -156,17 +164,48 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Review"
+                "$ref": "#/components/schemas/ReviewInputDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Review"
+                "$ref": "#/components/schemas/ReviewInputDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Review"
+                "$ref": "#/components/schemas/ReviewInputDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/usuario/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
               }
             }
           }
@@ -181,13 +220,23 @@
   },
   "components": {
     "schemas": {
-      "Movie": {
+      "LoginDTO": {
         "type": "object",
         "properties": {
-          "id": {
+          "username": {
             "type": "string",
-            "format": "uuid"
+            "nullable": true
           },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MovieInputDTO": {
+        "type": "object",
+        "properties": {
           "title": {
             "type": "string",
             "nullable": true
@@ -196,41 +245,31 @@
             "type": "string",
             "nullable": true
           },
+          "synopsis": {
+            "type": "string",
+            "nullable": true
+          },
+          "poster": {
+            "type": "string",
+            "nullable": true
+          },
           "releaseYear": {
             "type": "integer",
             "format": "int32"
-          },
-          "deleted": {
-            "type": "boolean"
-          },
-          "reviews": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Review"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Review": {
+      "ReviewInputDTO": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "movieId": {
-            "type": "string",
-            "format": "uuid"
+          "rating": {
+            "type": "integer",
+            "format": "int32"
           },
           "comment": {
             "type": "string",
             "nullable": true
-          },
-          "rating": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -240,6 +279,9 @@
   "tags": [
     {
       "name": "Movies"
+    },
+    {
+      "name": "Users"
     }
   ]
 }

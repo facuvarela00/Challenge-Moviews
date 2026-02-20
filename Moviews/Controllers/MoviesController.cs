@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MovieApi.Exceptions;
-using MovieApi.Models;
-using MovieApi.Services;
-
-namespace MovieApi.Controllers;
+using Moviews.Exceptions;
+using Moviews.Models;
+using Moviews.Services;
 
 [ApiController]
 [Route("pelicula")]
@@ -17,15 +15,18 @@ public class MoviesController : ControllerBase
     }
 
     [HttpGet("listar")]
-    public IActionResult GetAll()
-        => Ok(_service.GetAll());
+    public async Task<IActionResult> GetAll()
+    {
+        var movies = await _service.GetAllAsync();
+        return Ok(movies);
+    }
 
     [HttpGet("obtener/{id}")]
-    public IActionResult GetById(Guid id)
+    public async Task<IActionResult> GetById(Guid id)
     {
         try
         {
-            var movie = _service.GetById(id);
+            var movie = await _service.GetByIdAsync(id);
             return Ok(movie);
         }
         catch (MovieNotFoundException ex)
@@ -35,23 +36,20 @@ public class MoviesController : ControllerBase
     }
 
     [HttpPost("crear")]
-    public IActionResult Create(Movie movie)
+    public async Task<IActionResult> Create(MovieInputDTO movie)
     {
-        if (string.IsNullOrWhiteSpace(movie.Title))
-            return BadRequest("Title es obligatorio");
-
-        var created = _service.Create(movie);
+        var created = await _service.CreateAsync(movie);
 
         return Ok(created);
     }
 
     [HttpPut("actualizar/{id}")]
-   public IActionResult Update(Guid id, Movie movie)
+    public async Task<IActionResult> Update(Guid id, MovieInputDTO movie)
     {
         try
         {
-            _service.Update(id, movie);
-            return NoContent();
+            var updated = await _service.UpdateAsync(id, movie);
+            return Ok(updated);
         }
         catch (MovieNotFoundException ex)
         {
@@ -60,13 +58,12 @@ public class MoviesController : ControllerBase
     }
 
     [HttpDelete("borrar/{id}")]
-    public IActionResult Delete(Guid id)
+    public async Task<IActionResult> Delete(Guid id)
     {
-
         try
         {
-           _service.Delete(id);
-            return NoContent();
+            var deleted = await _service.DeleteAsync(id);
+            return Ok(deleted);
         }
         catch (MovieNotFoundException ex)
         {
@@ -74,12 +71,12 @@ public class MoviesController : ControllerBase
         }
     }
 
-    [HttpPost("review/{movieId}")]
-    public IActionResult AddReview(Guid movieId, Review review)
+    [HttpPost("{movieId}/review")]
+    public async Task<IActionResult> AddReview(Guid userId, Guid movieId, ReviewInputDTO review)
     {
         try
         {
-            var created = _service.AddReview(movieId, review);
+            var created = await _service.AddReviewAsync(movieId, userId, review);
             return Ok(created);
         }
         catch (MovieNotFoundException ex)
