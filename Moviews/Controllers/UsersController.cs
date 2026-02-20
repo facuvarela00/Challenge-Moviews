@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.Data;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Moviews.Exceptions;
 using Moviews.Models;
@@ -18,17 +19,16 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost("login")]
+    [AllowAnonymous]
     public async Task<IActionResult> Login([FromBody] LoginDTO request)
     {
         try
         {
-            var user = await _service.LoginAsync(request.Username, request.Password);
+            var token = await _service.LoginAsync(request.Username, request.Password);
 
             return Ok(new
             {
-                user.Id,
-                user.UserName,
-                user.IsAdmin
+                token = token
             });
         }
         catch (InvalidCredentialsException ex)

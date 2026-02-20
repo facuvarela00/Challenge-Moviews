@@ -4,6 +4,6 @@ namespace Moviews.Services;
 
 public interface IUserService
 {
-    Task<User> LoginAsync(string username, string password);
+    Task<string> LoginAsync(string username, string password);
     Task<User> GetUserByIdAsync(Guid id);
 }

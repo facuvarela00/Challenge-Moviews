@@ -6,7 +6,6 @@ C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\Mov
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\Moviews.runtimeconfig.json
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\Moviews.dll
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\Moviews.pdb
-C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\Microsoft.OpenApi.dll
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\obj\Debug\net10.0\Moviews.csproj.AssemblyReference.cache
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\obj\Debug\net10.0\rpswa.dswa.cache.json

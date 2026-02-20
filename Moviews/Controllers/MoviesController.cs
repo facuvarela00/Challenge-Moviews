@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Moviews.Exceptions;
 using Moviews.Models;
 using Moviews.Services;
@@ -14,6 +15,7 @@ public class MoviesController : ControllerBase
         _service = service;
     }
 
+    [Authorize(Roles = "Admin,User")]
     [HttpGet("listar")]
     public async Task<IActionResult> GetAll()
     {
@@ -21,6 +23,7 @@ public class MoviesController : ControllerBase
         return Ok(movies);
     }
 
+    [Authorize(Roles = "Admin,User")]
     [HttpGet("obtener/{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
@@ -35,6 +38,7 @@ public class MoviesController : ControllerBase
         }
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpPost("crear")]
     public async Task<IActionResult> Create(MovieInputDTO movie)
     {
@@ -43,6 +47,7 @@ public class MoviesController : ControllerBase
         return Ok(created);
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpPut("actualizar/{id}")]
     public async Task<IActionResult> Update(Guid id, MovieInputDTO movie)
     {
@@ -57,6 +62,7 @@ public class MoviesController : ControllerBase
         }
     }
 
+    [Authorize(Roles = "Admin")]
     [HttpDelete("borrar/{id}")]
     public async Task<IActionResult> Delete(Guid id)
     {
@@ -71,6 +77,7 @@ public class MoviesController : ControllerBase
         }
     }
 
+    [Authorize(Roles = "User")]
     [HttpPost("{movieId}/review")]
     public async Task<IActionResult> AddReview(Guid userId, Guid movieId, ReviewInputDTO review)
     {
