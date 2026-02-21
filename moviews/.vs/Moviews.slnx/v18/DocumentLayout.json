@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\testing\\movieservice\\movieservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\testing\\movieservice\\movieservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\repositories\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\repositories\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,20 +34,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "MovieServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Testing\\MovieService\\MovieServiceTest.cs",
+              "RelativeDocumentMoniker": "Moviews\\Testing\\MovieService\\MovieServiceTest.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Testing\\MovieService\\MovieServiceTest.cs",
+              "RelativeToolTip": "Moviews\\Testing\\MovieService\\MovieServiceTest.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T20:09:38.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Moviews\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Moviews\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T00:17:13.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T00:17:13.563Z"
             },
             {
               "$type": "Document",
@@ -49,23 +69,33 @@
               "RelativeDocumentMoniker": "Moviews\\Services\\MovieService.cs",
               "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Services\\MovieService.cs",
               "RelativeToolTip": "Moviews\\Services\\MovieService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAApwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAuwLgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T00:16:16.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T00:16:16.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MovieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Repositories\\MovieRepository.cs",
+              "RelativeDocumentMoniker": "Moviews\\Repositories\\MovieRepository.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Repositories\\MovieRepository.cs",
+              "RelativeToolTip": "Moviews\\Repositories\\MovieRepository.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwGEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T01:58:59.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "Moviews\\Controllers\\MoviesController.cs",
               "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\MoviesController.cs",
               "RelativeToolTip": "Moviews\\Controllers\\MoviesController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwEUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv2cAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:54:30.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:54:30.694Z"
             },
             {
               "$type": "Document",
@@ -75,10 +105,9 @@
               "RelativeDocumentMoniker": "Moviews\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Services\\UserService.cs",
               "RelativeToolTip": "Moviews\\Services\\UserService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowCYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwv0MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T00:13:21.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T00:13:21.924Z"
             }
           ]
         }

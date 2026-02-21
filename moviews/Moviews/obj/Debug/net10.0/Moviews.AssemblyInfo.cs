@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Moviews")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce6de849d9e4fce7a3430dfb11ed097af3f33582")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de29e9657ed8b216220d83d5bf3814a2692194f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Moviews")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Moviews")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

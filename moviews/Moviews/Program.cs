@@ -85,6 +85,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapGet("/health", (ILogger<Program> logger) =>
+{
+    logger.LogInformation("Health endpoint was called");
+
+    return Results.Ok(new
+    {
+        status = "Healthy",
+        timestamp = DateTime.UtcNow
+    });
+});
+
 app.UseHttpsRedirection();
 
 app.UseCors("AllowAngular");
