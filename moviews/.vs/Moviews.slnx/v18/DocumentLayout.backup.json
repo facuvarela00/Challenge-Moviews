@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|c:\\users\\facun\\desktop\\challenge peliculas\\moviews\\moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F6B41-D3EA-71FD-247B-033ADFC2D49B}|Moviews\\Moviews.csproj|solutionrelative:moviews\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "Moviews\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\facun\\Desktop\\Challenge Peliculas\\moviews\\Moviews\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "Moviews\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAmwFcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:54:30.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
