@@ -214,3 +214,4 @@ C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\zh-
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\facun\Desktop\Challenge Peliculas\Moviews\Moviews\bin\Debug\net10.0\BCrypt.Net-Next.dll

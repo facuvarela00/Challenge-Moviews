@@ -24,7 +24,12 @@ public class UserService : IUserService
     {
         var user = await _repository.GetByUsernameAsync(username);
 
-        if (user == null || user.Password != password)
+        if (user == null)
+            throw new InvalidCredentialsException();
+
+        bool isValid = BCrypt.Net.BCrypt.Verify(password, user.Password);
+
+        if (!isValid)
             throw new InvalidCredentialsException();
 
         return GenerateJwtToken(user);

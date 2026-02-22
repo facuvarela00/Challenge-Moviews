@@ -22,6 +22,7 @@ public class UsersController : ControllerBase
     [AllowAnonymous]
     public async Task<IActionResult> Login([FromBody] LoginDTO request)
     {
+
         try
         {
             var token = await _service.LoginAsync(request.Username, request.Password);
