@@ -1,0 +1,141 @@
+<app-header [isLogged]="true"></app-header>
+
+<div class="page-container">
+    <div class="top-bar">
+        <h2 class="title">Listado de Películas</h2>
+
+        <div class="filters">
+            <input type="text" placeholder="Buscar por título..." [(ngModel)]="filtroTitulo">
+            <select [(ngModel)]="filtroGenero">
+                <option value="">Todos los géneros</option>
+                <option *ngFor="let g of generos" [value]="g">{{ g }}</option>
+            </select>
+        </div>
+
+        <button *ngIf="isAdmin" class="btn-add" (click)="irACrear()">
+            <fa-icon [icon]="faPlus"></fa-icon>
+            Agregar Película
+        </button>
+    </div>
+
+    <div *ngIf="peliculasFiltradas$ | async as peliculas; else loading">
+        <div class="grid">
+            <div class="movie-card" *ngFor="let pelicula of peliculas" (click)="irDetalle(pelicula.id)">
+                <div *ngIf="isAdmin" class="admin-icons" (click)="$event.stopPropagation()">
+                    <fa-icon [icon]="faPen" class="icon edit" (click)="editarPelicula(pelicula.id)"></fa-icon>
+                    <fa-icon [icon]="faTrash" class="icon delete" (click)="borrarPelicula(pelicula.id)"></fa-icon>
+                </div>
+                <h3>{{ pelicula.title }}</h3>
+                <p>{{ pelicula.genre }}</p>
+                <span>{{ pelicula.releaseYear }}</span>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #loading>
+        <div class="loader-container">
+            <div class="spinner"></div>
+            <p>Cargando películas...</p>
+        </div>
+    </ng-template>
+</div>
+
+<!-- MODAL CREAR -->
+<div class="modal-overlay" *ngIf="mostrarCrearModal">
+    <div class="modal futuristic">
+        <h2>Crear Película</h2>
+        <form [formGroup]="movieForm" (ngSubmit)="guardarNueva()">
+
+            <div class="field-group">
+                <input placeholder="Título" formControlName="title" [class.input-error]="campoInvalido('title')">
+                <div class="error-msg" *ngIf="campoInvalido('title')">
+                    <span *ngIf="movieForm.get('title')?.errors?.['required']">El título es obligatorio.</span>
+                    <span *ngIf="movieForm.get('title')?.errors?.['maxlength']">Máximo 40 caracteres.</span>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <select formControlName="genre" [class.input-error]="campoInvalido('genre')">
+                    <option value="" disabled selected>Seleccioná un género</option>
+                    <option *ngFor="let g of generos" [value]="g">{{ g }}</option>
+                </select>
+                <div class="error-msg" *ngIf="campoInvalido('genre')">El género es obligatorio.</div>
+            </div>
+
+            <div class="field-group">
+                <input placeholder="Año de lanzamiento" type="number" formControlName="releaseYear" [class.input-error]="campoInvalido('releaseYear')" min="1800">
+                <div class="error-msg" *ngIf="campoInvalido('releaseYear')">
+                    <span *ngIf="movieForm.get('releaseYear')?.errors?.['required']">El año es obligatorio.</span>
+                    <span *ngIf="movieForm.get('releaseYear')?.errors?.['min'] || movieForm.get('releaseYear')?.errors?.['anioMinimo']">El año debe ser mayor a 1800.</span>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <input placeholder="URL del Poster" formControlName="poster" [class.input-error]="campoInvalido('poster')">
+                <div class="error-msg" *ngIf="campoInvalido('poster')">La URL del poster es obligatoria.</div>
+            </div>
+
+            <div class="field-group">
+                <textarea placeholder="Sinopsis" formControlName="synopsis" [class.input-error]="campoInvalido('synopsis')"></textarea>
+                <div class="error-msg" *ngIf="campoInvalido('synopsis')">La sinopsis es obligatoria.</div>
+            </div>
+
+            <div class="modal-buttons">
+                <button type="button" class="btn-cancel" (click)="mostrarCrearModal=false">Cancelar</button>
+                <button type="submit" class="btn-save" [disabled]="isSaving">
+                    {{ isSaving ? 'Guardando...' : 'Crear' }}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- MODAL EDITAR -->
+<div class="modal-overlay" *ngIf="mostrarEditarModal">
+    <div class="modal futuristic">
+        <h2>Editar Película</h2>
+        <form [formGroup]="movieForm" (ngSubmit)="guardarEdicion()">
+
+            <div class="field-group">
+                <input placeholder="Título" formControlName="title" [class.input-error]="campoInvalido('title')">
+                <div class="error-msg" *ngIf="campoInvalido('title')">
+                    <span *ngIf="movieForm.get('title')?.errors?.['required']">El título es obligatorio.</span>
+                    <span *ngIf="movieForm.get('title')?.errors?.['maxlength']">Máximo 40 caracteres.</span>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <select formControlName="genre" [class.input-error]="campoInvalido('genre')">
+                    <option value="" disabled>Seleccioná un género</option>
+                    <option *ngFor="let g of generos" [value]="g">{{ g }}</option>
+                </select>
+                <div class="error-msg" *ngIf="campoInvalido('genre')">El género es obligatorio.</div>
+            </div>
+
+            <div class="field-group">
+                <input placeholder="Año de lanzamiento" type="number" formControlName="releaseYear" [class.input-error]="campoInvalido('releaseYear')" min="1800">
+                <div class="error-msg" *ngIf="campoInvalido('releaseYear')">
+                    <span *ngIf="movieForm.get('releaseYear')?.errors?.['required']">El año es obligatorio.</span>
+                    <span *ngIf="movieForm.get('releaseYear')?.errors?.['min'] || movieForm.get('releaseYear')?.errors?.['anioMinimo']">El año debe ser mayor a 1800.</span>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <input placeholder="URL del Poster" formControlName="poster" [class.input-error]="campoInvalido('poster')">
+                <div class="error-msg" *ngIf="campoInvalido('poster')">La URL del poster es obligatoria.</div>
+            </div>
+
+            <div class="field-group">
+                <textarea placeholder="Sinopsis" formControlName="synopsis" [class.input-error]="campoInvalido('synopsis')"></textarea>
+                <div class="error-msg" *ngIf="campoInvalido('synopsis')">La sinopsis es obligatoria.</div>
+            </div>
+
+            <div class="modal-buttons">
+                <button type="button" class="btn-cancel" (click)="mostrarEditarModal=false">Cancelar</button>
+                <button type="submit" class="btn-save" [disabled]="isSaving">
+                    {{ isSaving ? 'Guardando...' : 'Guardar' }}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

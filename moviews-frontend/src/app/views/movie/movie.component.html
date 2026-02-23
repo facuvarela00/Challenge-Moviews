@@ -1,0 +1,62 @@
+<app-header [isLogged]="true"></app-header>
+
+<div class="movie-container" *ngIf="!loading && movie">
+
+    <div class="movie-card">
+
+        <img [src]="movie.poster || 'https://via.placeholder.com/300x450'" class="poster" />
+
+        <div class="movie-info">
+            <h1>{{ movie.title }}</h1>
+            <p class="year">{{ movie.releaseYear }}</p>
+            <p class="genre">{{ movie.genre }}</p>
+            <p class="synopsis">{{ movie.synopsis }}</p>
+        </div>
+    </div>
+
+    <div *ngIf="movie.reviews?.length > 0" class="reviews-section">
+        <h2>Reseñas</h2>
+
+        <div class="review-card" *ngFor="let review of movie.reviews">
+
+            <img [src]="review.user?.photoUrl || 'https://i.pravatar.cc/50'" class="user-img">
+
+            <div class="review-content">
+                <h4>{{ review.user?.userName }}</h4>
+
+                <div class="stars">
+                    <span *ngFor="let star of [1,2,3,4,5]" [class.active]="star <= review.rating">★</span>
+                </div>
+
+                <p>{{ review.comment }}</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div *ngIf="!isAdmin" class="review-form">
+        <h3>Escribir reseña</h3>
+
+        <form [formGroup]="reviewForm" (ngSubmit)="submitReview()">
+
+            <div class="star-selector">
+                <span *ngFor="let star of [1,2,3,4,5]" (click)="reviewForm.patchValue({rating: star})"
+                    [class.active]="star <= reviewForm.value.rating">
+                    ★
+                </span>
+            </div>
+
+            <textarea formControlName="comment" placeholder="Escribí tu reseña..."></textarea>
+
+            <button type="submit">Enviar reseña</button>
+
+            <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+        </form>
+    </div>
+
+</div>
+
+<div *ngIf="loading" class="loader">
+    Cargando película...
+</div>

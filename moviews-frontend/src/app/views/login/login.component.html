@@ -1,0 +1,30 @@
+<div class="login-background">
+
+    <div class="login-container">
+
+        <h1 class="logo">MOVIEWS</h1>
+        <p class="subtitle">Accede a tu experiencia cinematográfica</p>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+
+    <div class="input-group">
+        <input type="text" formControlName="username" placeholder="Usuario" />
+    </div>
+
+    <div class="input-group">
+        <input type="password" formControlName="password" placeholder="Contraseña" />
+    </div>
+
+    <button type="submit" class="btn-login">
+        Iniciar Sesión
+    </button>
+
+    <p class="error" *ngIf="errorMessage">
+        {{ errorMessage }}
+    </p>
+
+</form>
+
+    </div>
+
+</div>

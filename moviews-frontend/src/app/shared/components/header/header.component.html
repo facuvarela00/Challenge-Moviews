@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div 
+    class="logo" 
+    [class.clickable]="isLogged"
+    (click)="irInicio()">
+    MOVIEWS
+  </div>
+
+  <button 
+    *ngIf="isLogged" 
+    class="btn-logout"
+    (click)="cerrarSesion()">
+    Cerrar sesión
+  </button>
+</nav>
